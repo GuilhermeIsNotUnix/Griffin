@@ -7,10 +7,6 @@ public class Griffin {
         this.password = "";
     }
 
-    //public boolean fits(int passwordLength, ) {
-
-    //}
-
     //Generates a random lowercase letter
     public char randomLowercaseLetter() {
         String lowercaseAlphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -91,65 +87,6 @@ public class Griffin {
 
         return newPassword.toString();
     }
-
-    /*public String generatePassword(int passwordLength) {
-        StringBuilder generatedPassword = new StringBuilder();
-        boolean fullString = false;
-
-        if(passwordLength < 4) {
-            return "Error: insecure password, less than 4 characters...";
-        } else {
-            for(int i = 0; i < passwordLength; i++) {
-                Random randomAlpha = new Random();
-                Random randomSymbol = new Random();
-                Random randomNumber = new Random();
-
-                generatedPassword.append(capitalizedAlphabet.charAt(randomAlpha.nextInt(capitalizedAlphabet.length() + 1)));
-                passwordLength--;
-
-                if(!fullString) {
-                    //generatedPassword += smallAlphabet.charAt(randomAlpha.nextInt(smallAlphabet.length() + 1));
-                    generatedPassword.append(smallAlphabet.charAt(randomAlpha.nextInt(smallAlphabet.length() + 1)));
-                    passwordLength--;
-
-                    if(i == passwordLength - 1) {
-                        fullString = true;
-                    }
-                }
-
-                if(!fullString) {
-                    //generatedPassword += symbolAlphabet.charAt(randomSymbol.nextInt(symbolAlphabet.length() + 1));
-                    generatedPassword.append(symbolAlphabet.charAt(randomSymbol.nextInt(symbolAlphabet.length() + 1)));
-                    passwordLength--;
-
-                    if(i == passwordLength - 1) {
-                        fullString = true;
-                    }
-                }
-
-                if(!fullString) {
-                    //generatedPassword += randomAlpha.nextInt();
-                    generatedPassword.append(numeric.charAt(randomNumber.nextInt(numeric.length() + 1)));
-                    passwordLength--;
-
-                    if(i == passwordLength - 1) {
-                        fullString = true;
-                    }
-                }
-
-                if(!fullString) {
-                    //generatedPassword += capitalizedAlphabet.charAt(randomAlpha.nextInt(capitalizedAlphabet.length() + 1));
-                    generatedPassword.append(capitalizedAlphabet.charAt(randomAlpha.nextInt(capitalizedAlphabet.length() + 1)));
-                    passwordLength--;
-
-                    if(i == passwordLength - 1) {
-                        fullString = true;
-                    }
-                }
-            }
-        }
-        return generatedPassword.toString();
-    }*/
 
     //Use generatePassword() as argument to set it as the password
     public void setPassword(String password) {
