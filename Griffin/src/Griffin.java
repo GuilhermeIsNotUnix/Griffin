@@ -57,7 +57,6 @@ public class Griffin {
         } else {
             try {
                 while(i <= passwordLenght || passwordLenght > 0) {
-                //for(int i = 0; i < passwordLenght; i++) {
                     if(passwordLenght > 0) {
                         newPassword.append(randomUppercaseLetter());
                         passwordLenght--;
